@@ -35,7 +35,7 @@ stack<Score> sortStack(stack<Score> &input)
 int main() {
   stack<Score> scores;
 
-  ifstream lecteur("highscore.txt");
+  ifstream lecteur("hiscore.txt");
     
     while (lecteur.eof() == false) {
         if(!lecteur.eof()) {
