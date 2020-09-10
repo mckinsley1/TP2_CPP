@@ -61,7 +61,7 @@ int main() {
     while(!scoresSorted.empty()) {
       ofstream fichier;
 
-      fichier.open("asterostorm.txt");
+      fichier.open("asterostorm.txt", std::ios::app);
       fichier << scoresSorted.top().getLogin() << endl;
       fichier << scoresSorted.top().getIdentifiantPartie() << endl;
       fichier << "Asterostorm=" << scoresSorted.top().getHighScore() << endl;
